@@ -90,18 +90,18 @@ header::after{
     color: $main-color;
     font-size: 26px;
     font-family: "Wisdom Script Regular";
+    
 }
 
 .nav-links{
-    display:block;
     width: 100%;
     list-style: none;
     display: flex;
     justify-content: space-between;
-    margin: 0;
     padding: 0;
     text-transform:uppercase;
     font-weight:bold;
+    flex-wrap:wrap;
     
 }
 .nav-links li{
@@ -244,4 +244,18 @@ footer .right{
     justify-content: center;
   }
 
+}
+
+@media screen and (max-width: 576px) {
+  
+  .splash p{
+    font-size: 20px;
+    color:rgb(255, 255, 255);
+    padding: 0 20px;
+}
+.splash h1{
+    font-size: 40px;
+    color:rgb(255, 255, 255);
+    margin: 0 20px;
+}
 }
